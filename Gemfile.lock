@@ -77,13 +77,12 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.5.0)
-    digest (3.1.0)
+    digest (3.2.0)
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    io-wait (0.2.1)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -92,8 +91,9 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.7.1)
     minitest (5.15.0)
-    net-imap (0.2.3)
+    net-imap (0.2.5)
       digest
       net-protocol
       strscan
@@ -101,14 +101,16 @@ GEM
       digest
       net-protocol
       timeout
-    net-protocol (0.1.2)
-      io-wait
+    net-protocol (0.2.2)
       timeout
     net-smtp (0.3.1)
       digest
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.0)
+      mini_portile2 (~> 2.7.0)
+      racc (~> 1.4)
     nokogiri (1.13.0-arm64-darwin)
       racc (~> 1.4)
     pry (0.14.1)
@@ -163,9 +165,9 @@ GEM
       rspec-support (~> 3.10)
     rspec-support (3.10.3)
     sqlite3 (1.4.2)
-    strscan (3.0.1)
+    strscan (3.1.5)
     thor (1.2.1)
-    timeout (0.2.0)
+    timeout (0.4.3)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     websocket-driver (0.7.5)
@@ -175,6 +177,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   application_action!
